@@ -2,59 +2,18 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>タイトル</title>
-    <style>
-      button {
-        margin: 0 0 1em 0.5em;
-      }
-      table {
-        border-collapse: collapse;
-      }
-      th {
-        color: white;
-        background: navy;
-        cursor: pointer;
-      }
-      th.sort-asc::after {
-        content: '↓';
-      }
-      th.sort-desc::after {
-        content: '↑';
-      }
-      td {
-        padding: 0 0.3em;
-        border-bottom: 1px solid lightgray;
-        vertical-align: top;
-      }
-      h5{
-      text-align: center;
-      }
-    .button2{
-      display: inline-block;
-      width: 150px;
-      height: 60px;
-      color: #8b1c48;
-      background: #ffffff;
-      border: 1px solid #8b1c48;
-      transition: all 0.3s ease 0s;
-      display: inline-block;
-      margin: 10px;
-      text-align: center;
-      cursor: pointer;
-      padding: 20px;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-    .button2:hover{
-      background: #8b1c48;
-      color: #ffffff;
-    }
-    /* 後でCSSにまとめる */
-  </style>
+    <title>JIYU 考古学</title>
   </head>
 
   <body>
-    <h5><a href="list.html" class="button2">表示切替<div class="more-solid icon"></div></a></h5>
+    <h5><a href="list.html" class="button">表示切替<br>(アイコン)<div class="more-solid icon"></div></a></h5>
     <h1>タイトル</h1>
+
+    
     <table>
       <tr><th>見出し1型式</th><th>見出し2年代</th><th>見出し3</th></tr>
       <tr><td>あああ</td><td>CCC</td><td>333</td></tr>
@@ -142,6 +101,7 @@
         return 0;
       }
     </script>
-    <h5><a href="../index.html" class="button2">戻る</a></h5>
+
+    <h5><a href="../index.html" class="button">戻る</a></h5>
   </body>
 </html>
