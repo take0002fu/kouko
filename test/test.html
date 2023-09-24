@@ -2,61 +2,20 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>タイトル</title>
-    <style>
-      button {
-        margin: 0 0 1em 0.5em;
-      }
-      table {
-        border-collapse: collapse;
-      }
-      th {
-        color: white;
-        background: navy;
-        cursor: pointer;
-      }
-      th.sort-asc::after {
-        content: '↓';
-      }
-      th.sort-desc::after {
-        content: '↑';
-      }
-      td {
-        padding: 0 0.3em;
-        border-bottom: 1px solid lightgray;
-        vertical-align: top;
-      }
-      h5{
-      text-align: center;
-      }
-    .button2{
-      display: inline-block;
-      width: 150px;
-      height: 60px;
-      color: #8b1c48;
-      background: #ffffff;
-      border: 1px solid #8b1c48;
-      transition: all 0.3s ease 0s;
-      display: inline-block;
-      margin: 10px;
-      text-align: center;
-      cursor: pointer;
-      padding: 20px;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-    .button2:hover{
-      background: #8b1c48;
-      color: #ffffff;
-    }
-    /* 後でCSSにまとめる */
-  </style>
+    <title>JIYU 考古学</title>
   </head>
 
   <body>
-    <h5><a href="list.html" class="button2">表示切替<div class="more-solid icon"></div></a></h5>
-    <h1>タイトル</h1>
+    
+    <h1>詳細</h1>
+    <p>見出しをクリックするとソート、検索窓にキーワードを入力すると一致する結果のみ表示します</p>
+    <button><a href="list.html">表示切替</a></button>
     <table>
-      <tr><th>見出し1型式</th><th>見出し2年代</th><th>見出し3</th></tr>
+      <tr><th>型式</th><th>年代</th><th>更新日</th></tr>
       <tr><td>あああ</td><td>CCC</td><td>333</td></tr>
       <tr><td>いいい</td><td>BBB</td><td>111</td></tr>
       <tr><td>ううう</td><td>AAA</td><td>222</td></tr>
@@ -76,7 +35,7 @@
         body.insertBefore(input, table);
 
         const button = document.createElement('button');
-        button.textContent = '正規表現で検索';
+        button.textContent = '検索';
         button.onclick = filterRows;
         body.insertBefore(button, table);
 
@@ -142,6 +101,8 @@
         return 0;
       }
     </script>
-    <h5><a href="../index.html" class="button2">戻る</a></h5>
+
+    <h5><a href="../index.html" class="button">戻る</a></h5>
   </body>
 </html>
+
